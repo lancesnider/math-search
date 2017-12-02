@@ -1,23 +1,31 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, View } from 'react-native'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+import GameInfo from './src/GameInfo'
+import Operands from './src/Operands'
+import Operators from './src/Operators'
+import Equals from './src/Equals'
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    backgroundColor: '#272822',
+    padding: 20,
+    justifyContent: 'flex-end'
+  }
+})
+
+class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <GameInfo />
+        <Operands />
+        <Operators />
+        <Equals />
+      </View>
+    )
+  }
+}
+
+export default App
