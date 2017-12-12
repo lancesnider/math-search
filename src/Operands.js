@@ -15,31 +15,11 @@ class Operands extends Component {
   render () {
     return (
       <View style={styles.operands}>
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
-        <Operand />
+        {
+          this.props.tileNumbers.map(function (number, index) {
+            <Operand number key={index} />
+          })
+        }
       </View>
     )
   }

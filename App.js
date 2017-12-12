@@ -22,7 +22,6 @@ class App extends React.Component {
         <GameInfo />
         <Operands />
         <Operators />
-        <Equals />
       </View>
     )
   }

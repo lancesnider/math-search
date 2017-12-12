@@ -1,4 +1,7 @@
 import React, {Component} from 'react'
+import Timetracker from './Timetracker'
+import Scoreboard from './Scoreboard'
+import HighScore from './HighScore'
 import { StyleSheet, Text, View } from 'react-native'
 
 const styles = StyleSheet.create({
@@ -17,9 +20,9 @@ class GameInfo extends Component {
   render () {
     return (
       <View style={styles.gameInfo}>
-        <Text style={styles.gameInfoText}>Time: 3:00</Text>
-        <Text style={styles.gameInfoText}>High Score: 100</Text>
-        <Text style={styles.gameInfoText}>Score: 23</Text>
+        <Timetracker />
+        <Scoreboard />
+        <HighScore />
       </View>
     )
   }

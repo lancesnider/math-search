@@ -24,7 +24,7 @@ class Operand extends Component {
         containerStyle={styles.operandContainer}
         style={styles.operand}
       >
-        9
+        {this.props.number}
       </Button>
     )
   }
