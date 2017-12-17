@@ -2,7 +2,7 @@ export const defaultGameData = {
   isPlaying: false,
   score: 0,
   clickedTiles: [],
-  tileNumbers: [],
+  tileNumbers: [1,2,3,6,4,1,2,2,3,5,5,6,6,7,9,5,4,7,3,2,5,7,8,9,0],
   equation: [],
   usedPatterns: [],
   feedback: '',
