@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 class Timetracker extends Component {
   render () {
     return (
-      <Text style={styles.timeTracker}>Time: {this.props.currentTime}</Text>
+      <Text style={styles.timeTracker}>Time: 1:00</Text>
     )
   }
 }
