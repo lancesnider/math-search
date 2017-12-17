@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 class HighScore extends Component {
   render () {
     return (
-      <Text style={styles.highscore}>Time: {this.pros.highScore}</Text>
+      <Text style={styles.highscore}>High Score: {this.props.highScore}</Text>
     )
   }
 }

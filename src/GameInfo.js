@@ -20,9 +20,9 @@ class GameInfo extends Component {
   render () {
     return (
       <View style={styles.gameInfo}>
-        <Timetracker />
-        <Scoreboard />
-        <HighScore />
+        <Timetracker currentTime='2:00' />
+        <Scoreboard score='50' />
+        <HighScore highScore='125' />
       </View>
     )
   }

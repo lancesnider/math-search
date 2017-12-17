@@ -4,7 +4,6 @@ import { StyleSheet, View } from 'react-native'
 import GameInfo from './src/GameInfo'
 import Operands from './src/Operands'
 import Operators from './src/Operators'
-import Equals from './src/Equals'
 
 const styles = StyleSheet.create({
   container: {
@@ -20,7 +19,7 @@ class App extends React.Component {
     return (
       <View style={styles.container}>
         <GameInfo />
-        <Operands />
+        <Operands tileNumbers={[1,2,3,6,4,1,2,2,3,5,5,6,6,7,9,5,4,7,3,2,5,7,8,9,0]} />
         <Operators />
       </View>
     )

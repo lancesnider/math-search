@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import { StyleSheet, View } from 'react-native'
-
 import Operand from './Operand'
 
 const styles = StyleSheet.create({
@@ -16,9 +15,9 @@ class Operands extends Component {
     return (
       <View style={styles.operands}>
         {
-          this.props.tileNumbers.map(function (number, index) {
-            <Operand number key={index} />
-          })
+          this.props.tileNumbers.map((number, index) =>
+            <Operand number={number} key={index} />
+          )
         }
       </View>
     )

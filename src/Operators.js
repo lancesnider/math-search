@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { StyleSheet, View } from 'react-native'
-
+import Button from 'react-native-button'
 import Operator from './Operator'
 
 const styles = StyleSheet.create({
@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     borderColor: '#272822'
   },
   equals: {
-    color: 'white'
+    color: 'white',
+    fontSize: 32
   }
 })
 

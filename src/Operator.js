@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet} from 'react-native'
 import Button from 'react-native-button'
 
 const styles = StyleSheet.create({
@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     backgroundColor: '#f5923e',
     borderWidth: 1,
-
     justifyContent: 'center',
     borderColor: '#272822'
   },
   operator: {
-    fontSize: 20,
+    fontSize: 26,
     color: 'white',
+    fontWeight: 'bold'
   }
 })
 
@@ -25,7 +25,7 @@ class Operator extends Component {
         containerStyle={styles.operatorContainer}
         style={styles.operator}
       >
-        +
+        {this.props.children}
       </Button>
     )
   }

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 class Scoreboard extends Component {
   render () {
     return (
-      <Text style={styles.scoreboard}>Time: {this.props.score}</Text>
+      <Text style={styles.scoreboard}>Score: {this.props.score}</Text>
     )
   }
 }
